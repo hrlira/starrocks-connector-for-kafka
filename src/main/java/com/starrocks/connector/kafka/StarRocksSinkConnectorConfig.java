@@ -152,7 +152,7 @@ public class StarRocksSinkConnectorConfig {
                         BUFFERFLUSH_INTERVALMS,
                         ConfigDef.Type.LONG,
                         1000,
-                        ConfigDef.Range.between(1000, 3600000),
+                        ConfigDef.Range.between(0, 3600000),
                         ConfigDef.Importance.LOW,
                         "the interval at which data is sent in bulk to starrocks",
                         CONFIG_GROUP_1,
